@@ -16,14 +16,14 @@ class Configuration(BaseModel):
     )
 
     reflection_model: str = Field(
-        default="Qwen/Qwen3-32B-Instruct",
+        default="Qwen/QwQ-32B-Preview",
         metadata={
             "description": "The name of the language model to use for the agent's reflection."
         },
     )
 
     answer_model: str = Field(
-        default="Qwen/Qwen3-32B-Instruct",
+        default="Qwen/QwQ-32B-Preview",
         metadata={
             "description": "The name of the language model to use for the agent's answer."
         },

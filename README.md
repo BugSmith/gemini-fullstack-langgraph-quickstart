@@ -1,5 +1,13 @@
 # Gemini Fullstack LangGraph Quickstart
-> 为了解决国内访问gemini API响应慢的问题，修改了代码，通过OpenAI兼容协议来接入硅基流动API，已经测试通过。
+> 为了解决国内访问gemini API响应慢的问题，修改了代码，通过OpenAI兼容协议来接入硅基流动API。
+>
+> 默认使用了Qwen/QwQ-32B-Preview，可以从backend/src/agent/configuration.py里修改不同阶段使用的模型，流程已经测试通过。
+>
+>每次修改代码后，请执行以下代码以保证修改生效：
+```python
+cd backend
+pip install -e .
+```
 
 This project demonstrates a fullstack application using a React frontend and a LangGraph-powered backend agent. The agent is designed to perform comprehensive research on a user's query by dynamically generating search terms, querying the web using Google Search, reflecting on the results to identify knowledge gaps, and iteratively refining its search until it can provide a well-supported answer with citations. This application serves as an example of building research-augmented conversational AI using LangGraph and Google's Gemini models.
 
